@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Gochi+Hand");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    background-color: #BEE5FF;
+}
+
+
+.header {
+    text-align: center;
+    padding-top: 1em;
+    font-size: 1.5em;
+    color: #FFFFFF;
+    font-family: 'Gochi Hand', cursive;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+#listdiv {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+#task-input {
+    flex-direction: row;
+    flex: 8;
+    height: 22px;
+    outline: 0;
+    font-size: 1rem;
+    font-weight: 100;
+    padding-left: 5px;
+    border: inset 1px lightblue;
+}
+
+#add-btn {
+    flex: 1;
+    height: 24px;
+    transition: 100ms;
+    padding: 0px 10px;
+    background-color: lightgreen;
+    background: linear-gradient(lightgreen, rgb(109, 196, 109));
+    border: 1px rgb(120, 212, 120) solid;
+    color: white;
+}
+
+
+#add-btn:hover {
+    cursor: pointer;
+    background-color: rgb(89, 194, 89);
+    background: linear-gradient(rgb(118, 204, 118), rgb(87, 192, 87));
+}
+
+#add-btn:focus {
+    outline: 0;
+}
+
+ul li {
+    flex: 1;
+    list-style: none;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+li:first-child{
+    margin-top: -3px;
+}
+
+li:nth-child(odd) {
+    transform: perspective(10rem) rotateX(3.9deg) translateY(3px) scale(1.00005, 1.009);
+    background: linear-gradient(to bottom,  #f1f1f1 0%,rgb(233, 232, 232) 100%);
+  }
+  
+li:nth-child(even) {
+    transform: perspective(5.5rem) rotateX(-2.5deg) translateY(3px) scale(1.0005, 1.009);
+    background: white;
+    box-shadow: 0px 1px 1px rgba(73, 73, 73, 0.603);
+  }
+
+#top-search {
+    display: flex;
+}
