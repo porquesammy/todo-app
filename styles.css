@@ -12,6 +12,16 @@
     user-select: none;
 }
 
+
+html, body { 
+    background: url(https://images.unsplash.com/photo-1500487003906-9baadc8d610d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+
 body {
     background-color: #BEE5FF;
 }
@@ -21,9 +31,10 @@ body {
     text-align: center;
     padding-top: 1em;
     font-size: 1.5em;
-    color: #FFFFFF;
+    color: rgb(255, 255, 255);
     font-family: 'Gochi Hand', cursive;
-    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0,0,0,0.05);
 }
 
 #listdiv {
@@ -92,3 +103,4 @@ li:nth-child(even) {
 #top-search {
     display: flex;
 }
+
